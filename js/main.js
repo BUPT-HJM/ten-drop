@@ -42,7 +42,8 @@ var Drop = function() {
 	this.y = h / 2;
 	this.generation = 1;
 	this.direction = null;
-	this.color = "#43A6FF";
+	//this.color = "#1BD369";
+	this.colorArr = ["#43A6FF", "#1BD369", "#FF7575"];
 }
 
 Drop.prototype = {
@@ -52,6 +53,9 @@ Drop.prototype = {
 	},
 	//根据水滴的代来选择画的方法
 	chooseDraw: function() {
+		var colorIndex = (game.level - 1) % 3;
+		this.color = this.colorArr[colorIndex];
+		//console.log(colorIndex);
 		switch (this.generation) {
 			case 1:
 				this.draw_1();
@@ -427,8 +431,8 @@ Game.prototype = {
 			dropCollection.add(drop);
 		}
 		var giveDrop;
-		if (leftDropNum + 10 < 20) {
-			giveDrop = 10;
+		if (leftDropNum + 8 < 20) {
+			giveDrop = 8;
 		} else {
 			giveDrop = 20 - leftDropNum;
 		}
