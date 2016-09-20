@@ -431,8 +431,8 @@ Game.prototype = {
 			dropCollection.add(drop);
 		}
 		var giveDrop;
-		if (leftDropNum + 8 < 20) {
-			giveDrop = 8;
+		if (leftDropNum + 7 <= 20) {
+			giveDrop = 7;
 		} else {
 			giveDrop = 20 - leftDropNum;
 		}
