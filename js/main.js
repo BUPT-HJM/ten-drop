@@ -385,7 +385,7 @@ Game.prototype = {
 			that.dropCollection.fly();
 			that.dropCollection.process();
 			that.timeChange();
-		}, 1000 / 60 * 0.5);
+		}, 7);
 	},
 	//判断是否游戏结束
 	isGameOver: function() {
