@@ -1,9 +1,11 @@
 /**
  * @author BUPT-HJM
  * @name  TEN-DROP 1.0.0
- * @description 基于canvas的原生js图片爆炸插件
- * @updateTime 2016/08/04
+ * @description 一个基于canvas的十滴水小游戏
+ * @updateTime 2016/09/20
  */
+
+
 //canvas
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext('2d');
