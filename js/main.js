@@ -389,7 +389,7 @@ Game.prototype = {
 			that.dropCollection.fly();
 			that.dropCollection.process();
 			that.timeChange();
-		}, 7);
+		}, 5);
 	},
 	//判断是否游戏结束
 	isGameOver: function() {
