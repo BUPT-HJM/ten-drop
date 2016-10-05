@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body,html {
+	font-family: Arial, "微软雅黑";
+	//background-color: #ededed;
+}
+
+.login-box a {
+    display: block;
+    cursor: pointer;
+    width: 200px;
+    height: 38px;
+    background: url("../img/login_fast_new.png") no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin-top: 15px;
+}
+
+.login-box a.weibo {
+	background-position: 0px -38px;
+}
+
+.login-box a.qq {
+	 background-position: 0px 0px;
+}
+
+.wrap {
+
+}
+.wrap .content {
+	width: 500px;
+	height: 480px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	top: 26%;
+	margin-left: -250px;
+	color: #021531;
+}
+.title {
+	font-size: 70px;
+	text-align: center;
+	color: #2f83ef;
+	font-weight: 600;
+}
+.title #leftDrop {
+	position: relative;
+	color: red;
+	font-size: 100px;
+}
+.rule {
+	margin-top: 20px;
+	padding-left: 30px;
+	font-size: 30px;
+	text-align: left;
+}
+.rule p {
+	margin: 8px;
+}
+.login {
+	margin-top: 20px;
+	padding-left: 30px;
+	font-size: 30px;
+}
+.login {
+	margin-top: 20px;
+	padding-left: 40px;
+	font-size: 30px;
+}
+.ds-login {
+	margin-top: 10px;
+}
+
+
+
+.copyright {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+/*
+.ds-login {
+	opacity: 0;
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+.tips {
+	opacity: 0;
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}*/
+/*#main {
+	width: 100%;
+	height: 100%;
+
+}*/
+
+/*.login-box a {
+    float: left;
+    margin: 0 5px 0 0;
+}
+.login-box a.weibo {
+    background-position: -37px 0 !important;
+}
+.login-box a.qq {
+    background-position: -488px 0 !important;
+}
+.login-box a.renren {
+    background-position: -148px 0 !important;
+}
+.login-box a.kaixin {
+	background-position: -111px 0 !important;
+}
+.login-box a.douban {
+	background-position: -186px 0 !important;
+}
+.login-box a {
+    display: block;
+    cursor: pointer;
+    width: 32px !important;
+    height: 32px !important;
+    background: url(//static.duoshuo.com/images/icons_large.png) no-repeat !important;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}*/
+
+

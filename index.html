@@ -2,35 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>TEN-DROP</title>
 	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
-	<title>TEN DROP</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 	<div class="wrap">
-		<h1 class="title">
-			<span id="leftDrop">TEN</span>
-			DROP
-		</h1>
-		<p id="info">
-			You can use ten drop.
-		</p>
-		<p id="level">Level 1</p>
-		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel">1</span></p>
-		<canvas id="canvas"></canvas>
-		<p id="restartBtn">RESTART</p>
-		<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
+		<div class="content">
+			<h1 class="title">
+				<span id="leftDrop">TEN</span>
+				DROP
+			</h1>
+			<div class="rule">
+				<p>1.消除完所有水滴过关</p>
+				<p>2.每关难度随机</p>
+				<p>3.每关增加水滴7滴</p>
+				<p>4.水滴上限20滴</p>
+			</div>
+			<div class="login">
+				<p>无需注册，点击授权登录</p>
+				<div class="login-box">
+					<a class="weibo" href="http://ten-drop.duoshuo.com/login/weibo/?sso=1&redirect_uri=https%3A%2F%2Fbupt-hjm.github.io%2Ften-drop%2Findex2.html">新浪微博</a>
+					<a class="qq" href="http://ten-drop.duoshuo.com/login/qq/?sso=1&redirect_uri=https%3A%2F%2Fbupt-hjm.github.io%2Ften-drop%2Findex2.html">QQ</a>
+				</div>
+			</div>
+			<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
+		</div>
 	</div>
-
-	<script src="js/main.js"></script>
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?293d76732302c3bf40e1b1d7b3abac78";
-		  var s = document.getElementsByTagName("script")[0];
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
 </body>
 </html>

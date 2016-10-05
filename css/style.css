@@ -1,11 +1,60 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 body,html {
 	font-family: Arial, "微软雅黑";
+	height: 100%;
+	overflow: hidden;
 }
+
+
+
 .wrap {
 	position: relative;
 	width: 600px;
 	height: 800px;
 	margin: 0 auto;
+	margin-top: 100px;
 }
 #canvas {
 	display: block;
@@ -21,6 +70,7 @@ body,html {
 	text-align: center;
 	font-size: 40px;
 	color: #2f83ef;
+	font-weight: bold;
 }
 .title #leftDrop {
 	position: relative;
@@ -77,3 +127,197 @@ body,html {
 	line-height: 50px;
 	text-align: center;
 }
+
+
+/*
+side-bar
+ */
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+    background-color: #fff;
+    z-index: 9;
+    box-shadow: 0 0 3px rgba(16, 16, 165, 0.5);
+    text-align: center;
+}
+
+.menu-button {
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.logo {
+	color: #9393ff;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.side-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background-color: #fff;
+	z-index: 8;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin-top: 80px;
+
+	transform: translate(-300px,0px);
+	-webkit-transform: translate(-300px,0px);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.open {
+	transform: translate(0px,0px);
+	-webkit-transform: translate(0px,0px);
+}
+
+.user-img {
+	display: block;
+	width: 230px;
+	height: 230px;
+	margin: 10px auto;
+}
+
+.user-name {
+	width: 230px;
+	height: 60px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 23px;
+}
+
+#rankTitle {
+	width: 230px;
+	height: 25px;
+	margin: 0px auto;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+}
+
+#levelRank {
+	padding: 15px;
+}
+
+
+
+#levelRank p {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	line-height: 50px;
+}
+#levelRank p img{
+	position: absolute;
+	left: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#levelRank p .user-rank-name {
+	margin-left: 60px;
+}
+#levelRank p .user-level{
+	float: right;
+}
+
+
+.mask {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	z-index: -999;
+}
+
+.show {
+	opacity: 1;
+	z-index: 7;
+}
+
+.load-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1500px;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 999;
+}
+
+.hide {
+	z-index: -999;
+	opacity: 0;
+}
+
+#load-item {
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -32px;
+	margin-top: -32px;
+}
+
+#loadBg p {
+	position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    margin-top: 56px;
+}
+
+.log-out-button {
+
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: -33px;
+    margin-bottom: 20px;
+    background-color: #9393ff;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 1337px){
+     #nav {
+     	position: absolute;
+     	top: -1000px;
+     }
+     .side-bar {
+     	margin-top: 0px;
+		transform: translate(0px,0px);
+		-webkit-transform: translate(0px,0px);
+     }
+     .wrap {
+     	margin-top: 37px;
+     }
+
+}
+
+

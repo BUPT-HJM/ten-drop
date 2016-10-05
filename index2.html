@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+	<title>TEN DROP</title>
+	<link rel="stylesheet" href="css/loading.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="load-bg" id="loadBg">
+		<div style="color: #fff" class="la-ball-spin-fade la-3x" id="load-item">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<p>正在努力加载中...</p>
+	</div>
+	<div id="nav">
+		<img src="img/menu.png" alt="" class="menu-button" id="menuButton">
+		<p class="logo">TEN DROP</p>
+	</div>
+	<div class="side-bar" id="sideBar">
+		<img src="" alt="" id="userImg" class="user-img">
+		<p id="userName" class="user-name"></p>
+		<a href="https://ten-drop.duoshuo.com/logout/" class="log-out-button">登出</a>
+		<h1 id="rankTitle">实时排行榜</h1>
+		<div id="levelRank"></div>
+	</div>
+	<div class="wrap">
+
+		<h1 class="title">
+			<span id="leftDrop">TEN</span>
+			DROP
+		</h1>
+		<p id="info">
+			You can use ten drop.
+		</p>
+		<p id="level">Level 1</p>
+		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span></p>
+		<canvas id="canvas"></canvas>
+		<p id="restartBtn">RESTART</p>
+		<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
+
+	</div>
+	<div id="mask" class="mask"></div>
+	<script>
+	var duoshuoQuery = {
+		short_name: "ten-drop"
+	};
+	</script>
+	<script src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+	<script src="//cdn.bootcss.com/sjcl/1.0.6/sjcl.min.js"></script>
+	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.0.0/wilddog-sync.js"></script>
+	<script src="js/embed.js"></script>
+	<script src="js/main2.js"></script>
+</body>
+</html>
