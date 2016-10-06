@@ -29,7 +29,8 @@
 		<img src="" alt="" id="userImg" class="user-img">
 		<p id="userName" class="user-name"></p>
 		<a href="https://ten-drop.duoshuo.com/logout/" class="log-out-button">登出</a>
-		<h1 id="rankTitle">实时排行榜</h1>
+		<h1 id="rankTitle">今日实时排行榜</h1>
+		<p id="switch">历史</p>
 		<div id="levelRank"></div>
 	</div>
 	<div class="wrap">
@@ -42,7 +43,9 @@
 			You can use ten drop.
 		</p>
 		<p id="level">Level 1</p>
-		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span></p>
+		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span><br>
+		<strong>todayBEST:</strong> Level <span id="todayBest"></span>
+		</p>
 		<canvas id="canvas"></canvas>
 		<p id="restartBtn">RESTART</p>
 		<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
@@ -67,6 +70,6 @@
 	<script src="//cdn.bootcss.com/sjcl/1.0.6/sjcl.min.js"></script>
 	<script type="text/javascript" src="https://cdn.wilddog.com/sdk/js/2.0.0/wilddog-sync.js"></script>
 	<script src="js/embed.js"></script>
-	<script src="js/main2.js"></script>
+	<script src="js/main-dev.js"></script>
 </body>
 </html>

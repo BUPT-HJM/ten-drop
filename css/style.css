@@ -206,6 +206,20 @@ side-bar
 	text-align: center;
 }
 
+#switch {
+	position: absolute;
+    top: 324px;
+    right: 10px;
+    width: 44px;
+    height: 31px;
+    background-color: #F42D3D;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 #levelRank {
 	padding: 15px;
 }
@@ -317,10 +331,6 @@ side-bar
      .wrap {
      	margin-top: 37px;
      }
-	 #mask {
-	 	z-index: 999;
-	 	opacity: 0;
-	 }
 
 }
 
