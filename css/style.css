@@ -317,6 +317,10 @@ side-bar
      .wrap {
      	margin-top: 37px;
      }
+	 #mask {
+	 	z-index: 999;
+	 	opacity: 0;
+	 }
 
 }
 
