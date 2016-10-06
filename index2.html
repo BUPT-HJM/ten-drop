@@ -29,7 +29,8 @@
 		<img src="" alt="" id="userImg" class="user-img">
 		<p id="userName" class="user-name"></p>
 		<a href="https://ten-drop.duoshuo.com/logout/" class="log-out-button">登出</a>
-		<h1 id="rankTitle">实时排行榜</h1>
+		<h1 id="rankTitle">今日实时排行榜</h1>
+		<p id="switch">历史</p>
 		<div id="levelRank"></div>
 	</div>
 	<div class="wrap">
@@ -42,22 +43,15 @@
 			You can use ten drop.
 		</p>
 		<p id="level">Level 1</p>
-		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span></p>
+		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span><br>
+		<strong>TODAY:</strong> Level <span id="todayBest"></span>
+		</p>
 		<canvas id="canvas"></canvas>
 		<p id="restartBtn">RESTART</p>
 		<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
 
 	</div>
 	<div id="mask" class="mask"></div>
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?e13cef438ad10b394872f8177cdb4e26";
-		  var s = document.getElementsByTagName("script")[0];
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
 	<script>
 	var duoshuoQuery = {
 		short_name: "ten-drop"

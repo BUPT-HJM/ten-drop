@@ -1,1 +1,830 @@
-var _0x5b60=["\x74\x6F\x75\x63\x68\x6D\x6F\x76\x65","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x62\x6F\x64\x79","\x44\x4F\x4D\x43\x6F\x6E\x74\x65\x6E\x74\x4C\x6F\x61\x64\x65\x64","\x61\x74\x74\x61\x63\x68","\x6D\x65\x6E\x75\x42\x75\x74\x74\x6F\x6E","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x73\x69\x64\x65\x42\x61\x72","\x6D\x61\x73\x6B","\x6F\x6E\x63\x6C\x69\x63\x6B","\x6F\x70\x65\x6E","\x74\x6F\x67\x67\x6C\x65","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x73\x68\x6F\x77","\x72\x65\x6D\x6F\x76\x65","\x74\x65\x6E\x2D\x64\x72\x6F\x70\x2E\x77\x69\x6C\x64\x64\x6F\x67\x2E\x63\x6F\x6D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x65\x6E\x2D\x64\x72\x6F\x70\x2E\x77\x69\x6C\x64\x64\x6F\x67\x69\x6F\x2E\x63\x6F\x6D","\x69\x6E\x69\x74\x69\x61\x6C\x69\x7A\x65\x41\x70\x70","\x72\x65\x66","\x73\x79\x6E\x63","\x75\x73\x65\x72","\x63\x68\x69\x6C\x64","\x75\x73\x65\x72\x49\x6D\x67","\x6C\x65\x76\x65\x6C\x52\x61\x6E\x6B","\x75\x73\x65\x72\x4E\x61\x6D\x65","\x63\x61\x6E\x76\x61\x73","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x77\x69\x64\x74\x68","\x68\x65\x69\x67\x68\x74","\x6C\x65\x66\x74\x44\x72\x6F\x70","\x4E\x4F\x4E\x45","\x4F\x4E\x45","\x54\x57\x4F","\x54\x48\x52\x45\x45","\x46\x4F\x55\x52","\x46\x49\x56\x45","\x53\x49\x58","\x53\x45\x56\x45\x4E","\x45\x49\x47\x48\x54","\x4E\x49\x4E\x45","\x54\x45\x4E","\x70\x75\x73\x68","\x69\x6E\x66\x6F","\x72\x65\x73\x74\x61\x72\x74\x42\x74\x6E","\x6C\x65\x76\x65\x6C","\x62\x65\x73\x74\x4C\x65\x76\x65\x6C","\x62\x65\x73\x74","\x6C\x6F\x61\x64\x42\x67","\x78","\x79","\x67\x65\x6E\x65\x72\x61\x74\x69\x6F\x6E","\x64\x69\x72\x65\x63\x74\x69\x6F\x6E","\x63\x6F\x6C\x6F\x72\x41\x72\x72","\x23\x34\x33\x41\x36\x46\x46","\x23\x31\x42\x44\x33\x36\x39","\x23\x46\x46\x37\x35\x37\x35","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x63\x68\x6F\x6F\x73\x65\x44\x72\x61\x77","\x63\x6F\x6C\x6F\x72","\x64\x72\x61\x77\x5F\x31","\x64\x72\x61\x77\x5F\x32","\x64\x72\x61\x77\x5F\x33","\x64\x72\x61\x77\x5F\x34","\x64\x72\x61\x77\x5F\x35","\x6C\x65\x66\x74","\x61\x64\x64\x5F\x62\x72\x6F\x6B\x65\x6E","\x64\x72\x6F\x70\x43\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E","\x72\x69\x67\x68\x74","\x75\x70","\x64\x6F\x77\x6E","\x73\x61\x76\x65","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x73\x63\x61\x6C\x65","\x62\x65\x67\x69\x6E\x50\x61\x74\x68","\x6D\x6F\x76\x65\x54\x6F","\x50\x49","\x61\x72\x63","\x63\x6C\x6F\x73\x65\x50\x61\x74\x68","\x66\x69\x6C\x6C","\x72\x65\x73\x74\x6F\x72\x65","\x77","\x68","\x68\x6F\x72","\x76\x65\x72","\x62\x6F\x61\x72\x64\x41\x72\x72","\x6C\x69\x6E\x65\x54\x6F","\x73\x74\x72\x6F\x6B\x65","\x64\x72\x6F\x70\x41\x72\x72","\x62\x72\x6F\x6B\x65\x6E\x41\x72\x72","\x63\x6C\x65\x61\x72\x52\x65\x63\x74","\x6C\x65\x6E\x67\x74\x68","\x70\x72\x6F\x63\x65\x73\x73","\x73\x70\x6C\x69\x63\x65","\x69\x73\x49\x6E\x74\x6F","\x62\x6F\x61\x72\x64","\x66\x6C\x6F\x6F\x72","\x67\x61\x6D\x65\x53\x74\x61\x72\x74","\x70\x61\x75\x73\x65","\x73\x74\x61\x72\x74\x54\x69\x6D\x65","\x65\x6E\x64\x54\x69\x6D\x65","\x6E\x61\x6D\x65","\x69\x6E\x69\x74","\x61\x64\x64","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x74\x69\x6D\x65\x43\x68\x61\x6E\x67\x65","\x63\x6C\x69\x63\x6B\x53\x65\x6C\x65\x63\x74","\x67\x65\x74\x54\x69\x6D\x65","\x69\x73\x47\x61\x6D\x65\x4F\x76\x65\x72","\x47\x61\x6D\x65\x20\x6F\x76\x65\x72\x21","\x6F\x66\x66\x73\x65\x74\x58","\x6F\x66\x66\x73\x65\x74\x59","\x59\x6F\x75\x20\x77\x69\x6E\x21\x20\x54\x72\x79\x20\x79\x6F\x75\x72\x20\x62\x65\x73\x74\x20\x74\x6F\x20\x67\x6F\x20\x74\x6F\x20\x6E\x65\x78\x74\x20\x6C\x65\x76\x65\x6C\x21","\x6E\x65\x78\x74\x4C\x65\x76\x65\x6C","\x59\x6F\x75\x20\x6C\x6F\x73\x65\x21","\x66\x6C\x79","\x4C\x65\x76\x65\x6C\x20","\x73\x65\x74\x42\x65\x73\x74","\x54\x72\x79\x20\x79\x6F\x75\x72\x20\x62\x65\x73\x74\x21\x20\x47\x69\x76\x65\x20\x79\x6F\x75\x20\x61\x6E\x6F\x74\x68\x65\x72\x20","\x20\x64\x72\x6F\x70\x21","","\x30","\x72\x6F\x75\x6E\x64","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\u5929\x20","\u5C0F\u65F6\x20","\x20\u5206\u949F","\x20\u79D2","\x73\x72\x63","\x65\x6E\x63\x72\x79\x70\x74","\x5F","\x75\x73\x65\x72\x5F\x69\x64","\x73\x65\x74","\x72\x61\x6E\x64\x6F\x6D","\x72\x65\x73\x65\x74","\x63\x6F\x64\x65","\x72\x65\x73\x70\x6F\x6E\x73\x65","\x61\x76\x61\x74\x61\x72\x5F\x75\x72\x6C","\x68\x72\x65\x66","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x75\x70\x74\x2D\x68\x6A\x6D\x2E\x67\x69\x74\x68\x75\x62\x2E\x69\x6F\x2F\x74\x65\x6E\x2D\x64\x72\x6F\x70\x2F","\x47\x45\x54","\x75\x73\x65\x72\x73\x2F\x70\x72\x6F\x66\x69\x6C\x65","\x64\x61\x74\x61","\x61\x6A\x61\x78","\x41\x50\x49","\x6F\x6E","\x76\x69\x73\x69\x74\x6F\x72","\x76\x61\x6C\x75\x65","\x76\x61\x6C","\x74","\x74\x6F\x6B\x65\x6E","\x64\x65\x63\x72\x79\x70\x74","\x65\x72\x72\x6F\x72","\x6C\x6F\x67","\u4E0D\u8981\u4F5C\u5F0A\u54E6\x7E","\x72\x65\x6C\x6F\x61\x64","\x6F\x6E\x63\x65","\x69\x6D\x67","\x75\x6E\x73\x68\x69\x66\x74","\x66\x6F\x72\x45\x61\x63\x68","\x3C\x70\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x27\x75\x73\x65\x72\x2D\x72\x61\x6E\x6B\x27\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D","\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x27\x75\x73\x65\x72\x2D\x72\x61\x6E\x6B\x2D\x6E\x61\x6D\x65\x27\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x27\x75\x73\x65\x72\x2D\x6C\x65\x76\x65\x6C\x27\x3E\x6C\x65\x76\x65\x6C\x20","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x2F\x70\x3E","\x68\x69\x64\x65","\x6C\x69\x6D\x69\x74\x54\x6F\x4C\x61\x73\x74","\x72\x61\x6E\x6B","\x6F\x72\x64\x65\x72\x42\x79\x43\x68\x69\x6C\x64"];document[_0x5b60[3]][_0x5b60[2]](_0x5b60[0],function(_0x9133x1){_0x9133x1[_0x5b60[1]]()},false);if(_0x5b60[2] in  document){document[_0x5b60[2]](_0x5b60[4],function(){FastClick[_0x5b60[5]](document[_0x5b60[3]])},false)};var menuButton=document[_0x5b60[7]](_0x5b60[6]);var sideBar=document[_0x5b60[7]](_0x5b60[8]);var mask=document[_0x5b60[7]](_0x5b60[9]);menuButton[_0x5b60[10]]= function(){sideBar[_0x5b60[13]][_0x5b60[12]](_0x5b60[11]);mask[_0x5b60[13]][_0x5b60[12]](_0x5b60[14])};mask[_0x5b60[10]]= function(){sideBar[_0x5b60[13]][_0x5b60[15]](_0x5b60[11]);mask[_0x5b60[13]][_0x5b60[15]](_0x5b60[14])};var userData;var config={authDomain:_0x5b60[16],syncURL:_0x5b60[17]};var defApp=wilddog[_0x5b60[18]](config);var ref=wilddog[_0x5b60[20]]()[_0x5b60[19]]();var user_ref=ref[_0x5b60[22]](_0x5b60[21]);var userImg=document[_0x5b60[7]](_0x5b60[23]);var levelRank=document[_0x5b60[7]](_0x5b60[24]);var userNameP=document[_0x5b60[7]](_0x5b60[25]);var canvas=document[_0x5b60[7]](_0x5b60[26]);var ctx=canvas[_0x5b60[28]](_0x5b60[27]);canvas[_0x5b60[29]]= 600;canvas[_0x5b60[30]]= 600;var w=canvas[_0x5b60[29]];var h=canvas[_0x5b60[30]];var leftDropNum=10;var leftDropSpan=document[_0x5b60[7]](_0x5b60[31]);var leftDropArr=[_0x5b60[32],_0x5b60[33],_0x5b60[34],_0x5b60[35],_0x5b60[36],_0x5b60[37],_0x5b60[38],_0x5b60[39],_0x5b60[40],_0x5b60[41],_0x5b60[42]];for(var i=11;i< 100;i++){leftDropArr[_0x5b60[43]](i)};var infoP=document[_0x5b60[7]](_0x5b60[44]);var restartBtn=document[_0x5b60[7]](_0x5b60[45]);var levelP=document[_0x5b60[7]](_0x5b60[46]);var bestLevel=document[_0x5b60[7]](_0x5b60[47]);var best=document[_0x5b60[7]](_0x5b60[48]);var loadBg=document[_0x5b60[7]](_0x5b60[49]);var game=null;var Drop=function(){this[_0x5b60[50]]= w/ 2;this[_0x5b60[51]]= h/ 2;this[_0x5b60[52]]= 1;this[_0x5b60[53]]= null;this[_0x5b60[54]]= [_0x5b60[55],_0x5b60[56],_0x5b60[57]]};Drop[_0x5b60[58]]= {process:function(){this[_0x5b60[59]]()},chooseDraw:function(){var _0x9133x1d=(game[_0x5b60[46]]- 1)% 3;this[_0x5b60[60]]= this[_0x5b60[54]][_0x9133x1d];switch(this[_0x5b60[52]]){case 1:this[_0x5b60[61]]();break;case 2:this[_0x5b60[62]]();break;case 3:this[_0x5b60[63]]();break;case 4:this[_0x5b60[64]]();break;case 5:this[_0x5b60[65]]();break;default:break}},draw_1:function(){EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],15,20,this[_0x5b60[60]])},draw_2:function(){EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],30,30,this[_0x5b60[60]])},draw_3:function(){EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],45,35,this[_0x5b60[60]])},draw_4:function(){EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],50,50,this[_0x5b60[60]])},draw_5:function(){var _0x9133x1e=this[_0x5b60[50]];var _0x9133x1f=this[_0x5b60[51]];if(this[_0x5b60[53]]== null){this[_0x5b60[52]]= 6;EvenCompEllipse(ctx,this[_0x5b60[50]]- 20,this[_0x5b60[51]],10,10,this[_0x5b60[60]]);EvenCompEllipse(ctx,this[_0x5b60[50]]+ 20,this[_0x5b60[51]],10,10,this[_0x5b60[60]]);EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]]- 20,10,10,this[_0x5b60[60]]);EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]]+ 20,10,10,this[_0x5b60[60]])}else {EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],10,10,this[_0x5b60[60]]);EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],10,10,this[_0x5b60[60]]);EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],10,10,this[_0x5b60[60]]);EvenCompEllipse(ctx,this[_0x5b60[50]],this[_0x5b60[51]],10,10,this[_0x5b60[60]]);return};var _0x9133x20= new Drop();_0x9133x20[_0x5b60[50]]= _0x9133x1e- 20;_0x9133x20[_0x5b60[51]]= _0x9133x1f;_0x9133x20[_0x5b60[52]]= 5;_0x9133x20[_0x5b60[53]]= _0x5b60[66];game[_0x5b60[68]][_0x5b60[67]](_0x9133x20);var _0x9133x21= new Drop();_0x9133x21[_0x5b60[50]]= _0x9133x1e+ 20;_0x9133x21[_0x5b60[51]]= _0x9133x1f;_0x9133x21[_0x5b60[52]]= 5;_0x9133x21[_0x5b60[53]]= _0x5b60[69];game[_0x5b60[68]][_0x5b60[67]](_0x9133x21);var _0x9133x22= new Drop();_0x9133x22[_0x5b60[50]]= _0x9133x1e;_0x9133x22[_0x5b60[51]]= _0x9133x1f+ 20;_0x9133x22[_0x5b60[52]]= 5;_0x9133x22[_0x5b60[53]]= _0x5b60[70];game[_0x5b60[68]][_0x5b60[67]](_0x9133x22);var _0x9133x23= new Drop();_0x9133x23[_0x5b60[50]]= _0x9133x1e;_0x9133x23[_0x5b60[51]]= _0x9133x1f- 20;_0x9133x23[_0x5b60[52]]= 5;_0x9133x23[_0x5b60[53]]= _0x5b60[71];game[_0x5b60[68]][_0x5b60[67]](_0x9133x23)}};function EvenCompEllipse(_0x9133x25,_0x9133x26,_0x9133x27,_0x9133x28,_0x9133x29,_0x9133x2a){_0x9133x25[_0x5b60[72]]();_0x9133x25[_0x5b60[73]]= _0x9133x2a;var _0x9133x2b=(_0x9133x28> _0x9133x29)?_0x9133x28:_0x9133x29;var _0x9133x2c=_0x9133x28/ _0x9133x2b;var _0x9133x2d=_0x9133x29/ _0x9133x2b;_0x9133x25[_0x5b60[74]](_0x9133x2c,_0x9133x2d);_0x9133x25[_0x5b60[75]]();_0x9133x25[_0x5b60[76]]((_0x9133x26+ _0x9133x28)/ _0x9133x2c,_0x9133x27/ _0x9133x2d);_0x9133x25[_0x5b60[78]](_0x9133x26/ _0x9133x2c,_0x9133x27/ _0x9133x2d,_0x9133x2b,0,2* Math[_0x5b60[77]]);_0x9133x25[_0x5b60[79]]();_0x9133x25[_0x5b60[80]]();_0x9133x25[_0x5b60[81]]()}var Board=function(){this[_0x5b60[82]]= canvas[_0x5b60[29]];this[_0x5b60[83]]= canvas[_0x5b60[30]];this[_0x5b60[84]]= 6;this[_0x5b60[85]]= 6;this[_0x5b60[86]]= []};Board[_0x5b60[58]]= {init:function(){for(var i=0;i< this[_0x5b60[84]];i++){for(var _0x9133x2f=0;_0x9133x2f< this[_0x5b60[85]];_0x9133x2f++){var _0x9133x26=i* this[_0x5b60[82]]/ this[_0x5b60[84]]+ this[_0x5b60[82]]/ this[_0x5b60[84]]/ 2;var _0x9133x27=_0x9133x2f* this[_0x5b60[83]]/ this[_0x5b60[85]]+ this[_0x5b60[83]]/ this[_0x5b60[85]]/ 2;var _0x9133x30={x:_0x9133x26,y:_0x9133x27};this[_0x5b60[86]][_0x5b60[43]](_0x9133x30)}}},draw:function(){for(var i=0;i<= this[_0x5b60[84]];i++){ctx[_0x5b60[72]]();ctx[_0x5b60[75]]();ctx[_0x5b60[76]](i* this[_0x5b60[82]]/ this[_0x5b60[84]],0);ctx[_0x5b60[87]](i* this[_0x5b60[82]]/ this[_0x5b60[84]],this[_0x5b60[83]]);ctx[_0x5b60[79]]();ctx[_0x5b60[88]]();ctx[_0x5b60[81]]()};for(var i=0;i<= this[_0x5b60[85]];i++){ctx[_0x5b60[72]]();ctx[_0x5b60[75]]();ctx[_0x5b60[76]](0,i* this[_0x5b60[83]]/ this[_0x5b60[85]]);ctx[_0x5b60[87]](this[_0x5b60[82]],i* this[_0x5b60[83]]/ this[_0x5b60[85]]);ctx[_0x5b60[79]]();ctx[_0x5b60[88]]();ctx[_0x5b60[81]]()}}};var DropCollection=function(){this[_0x5b60[89]]= [];this[_0x5b60[90]]= []};DropCollection[_0x5b60[58]]= {process:function(){ctx[_0x5b60[91]](0,0,canvas[_0x5b60[29]],canvas[_0x5b60[30]]);for(var i=0;i< this[_0x5b60[89]][_0x5b60[92]];i++){if(this[_0x5b60[89]][i][_0x5b60[52]]== 6){continue};this[_0x5b60[89]][i][_0x5b60[93]]()};for(var i=0;i< this[_0x5b60[90]][_0x5b60[92]];i++){if(this[_0x5b60[90]][i][_0x5b60[52]]== 6){continue};this[_0x5b60[90]][i][_0x5b60[93]]()}},add:function(_0x9133x32){this[_0x5b60[89]][_0x5b60[43]](_0x9133x32)},remove:function(_0x9133x32){for(var i=0;i< this[_0x5b60[89]][_0x5b60[92]];i++){if(this[_0x5b60[89]][i]== _0x9133x32){this[_0x5b60[89]][_0x5b60[94]](i,1)}}},add_broken:function(_0x9133x32){this[_0x5b60[90]][_0x5b60[43]](_0x9133x32)},remove_broken:function(_0x9133x32){for(var i=0;i< this[_0x5b60[90]][_0x5b60[92]];i++){if(this[_0x5b60[90]][i]== _0x9133x32){this[_0x5b60[90]][_0x5b60[94]](i,1)}}},fly:function(_0x9133x32){for(var i=0;i< this[_0x5b60[90]][_0x5b60[92]];i++){if(this[_0x5b60[90]][i][_0x5b60[52]]== 6){continue};if(this[_0x5b60[95]](this[_0x5b60[90]][i][_0x5b60[50]],this[_0x5b60[90]][i][_0x5b60[51]])|| this[_0x5b60[90]][i][_0x5b60[50]]< -5|| this[_0x5b60[90]][i][_0x5b60[50]]> canvas[_0x5b60[29]]+ 5|| this[_0x5b60[90]][i][_0x5b60[51]]> canvas[_0x5b60[30]]+ 5|| this[_0x5b60[90]][i][_0x5b60[51]]<  -5){this[_0x5b60[90]][i][_0x5b60[52]]= 6;continue};switch(this[_0x5b60[90]][i][_0x5b60[53]]){case _0x5b60[66]:this[_0x5b60[90]][i][_0x5b60[50]]--;break;case _0x5b60[69]:this[_0x5b60[90]][i][_0x5b60[50]]++;break;case _0x5b60[70]:this[_0x5b60[90]][i][_0x5b60[51]]++;break;case _0x5b60[71]:this[_0x5b60[90]][i][_0x5b60[51]]--;break;default:break}}},isInto:function(_0x9133x26,_0x9133x27){var _0x9133x33=game[_0x5b60[96]];var _0x9133x34=game[_0x5b60[68]][_0x5b60[89]];var i=Math[_0x5b60[97]](_0x9133x26/ (_0x9133x33[_0x5b60[82]]/ _0x9133x33[_0x5b60[84]]));var _0x9133x2f=Math[_0x5b60[97]](_0x9133x27/ (_0x9133x33[_0x5b60[83]]/ _0x9133x33[_0x5b60[85]]));for(var _0x9133x35=0;_0x9133x35< _0x9133x34[_0x5b60[92]];_0x9133x35++){if((_0x9133x34[_0x9133x35][_0x5b60[50]]== (i* _0x9133x33[_0x5b60[82]]/ _0x9133x33[_0x5b60[84]]+ _0x9133x33[_0x5b60[82]]/ _0x9133x33[_0x5b60[84]]/ 2))&& (_0x9133x34[_0x9133x35][_0x5b60[51]]== (_0x9133x2f* _0x9133x33[_0x5b60[83]]/ _0x9133x33[_0x5b60[85]]+ _0x9133x33[_0x5b60[83]]/ _0x9133x33[_0x5b60[85]]/ 2))&& (_0x9133x34[_0x9133x35][_0x5b60[52]]<= 4)){_0x9133x34[_0x9133x35][_0x5b60[52]]++;if(_0x9133x34[_0x9133x35][_0x5b60[52]]> 6){_0x9133x34[_0x9133x35][_0x5b60[52]]= 6};return true}};return false}};var Game=function(){this[_0x5b60[96]]= null;this[_0x5b60[68]]= null;this[_0x5b60[98]]= false;this[_0x5b60[46]]= 1;this[_0x5b60[99]]= false;this[_0x5b60[100]]= 0;this[_0x5b60[101]]= 0;this[_0x5b60[102]]= null};Game[_0x5b60[58]]= {init:function(){ctx[_0x5b60[91]](0,0,canvas[_0x5b60[29]],canvas[_0x5b60[30]]);var _0x9133x33= new Board();_0x9133x33[_0x5b60[103]]();this[_0x5b60[96]]= _0x9133x33;var _0x9133x37= new DropCollection();for(var i=0;i< _0x9133x33[_0x5b60[86]][_0x5b60[92]];i++){var _0x9133x32= new Drop();_0x9133x32[_0x5b60[52]]= getNumberInRange(1,4);_0x9133x32[_0x5b60[50]]= _0x9133x33[_0x5b60[86]][i][_0x5b60[50]];_0x9133x32[_0x5b60[51]]= _0x9133x33[_0x5b60[86]][i][_0x5b60[51]];_0x9133x37[_0x5b60[104]](_0x9133x32)};leftDropSpan[_0x5b60[105]]= leftDropArr[10];this[_0x5b60[106]]();this[_0x5b60[68]]= _0x9133x37;this[_0x5b60[107]]();this[_0x5b60[100]]=  new Date()[_0x5b60[108]]()},clickSelect:function(){var _0x9133x38=this;var _0x9133x33=this[_0x5b60[96]];canvas[_0x5b60[10]]= function(_0x9133x39){_0x9133x39[_0x5b60[1]]();if(this[_0x5b60[99]]){return};if(leftDropNum== 0|| _0x9133x38[_0x5b60[109]]()){alert(_0x5b60[110]);return};_0x9133x38[_0x5b60[98]]= true;var i=Math[_0x5b60[97]](_0x9133x39[_0x5b60[111]]/ (_0x9133x33[_0x5b60[82]]/ _0x9133x33[_0x5b60[84]]));var _0x9133x2f=Math[_0x5b60[97]](_0x9133x39[_0x5b60[112]]/ (_0x9133x33[_0x5b60[83]]/ _0x9133x33[_0x5b60[85]]));var _0x9133x34=_0x9133x38[_0x5b60[68]][_0x5b60[89]];for(var _0x9133x35=0;_0x9133x35< _0x9133x34[_0x5b60[92]];_0x9133x35++){if((_0x9133x34[_0x9133x35][_0x5b60[50]]== (i* _0x9133x33[_0x5b60[82]]/ _0x9133x33[_0x5b60[84]]+ _0x9133x33[_0x5b60[82]]/ _0x9133x33[_0x5b60[84]]/ 2))&& (_0x9133x34[_0x9133x35][_0x5b60[51]]== (_0x9133x2f* _0x9133x33[_0x5b60[83]]/ _0x9133x33[_0x5b60[85]]+ _0x9133x33[_0x5b60[83]]/ _0x9133x33[_0x5b60[85]]/ 2))){if(_0x9133x34[_0x9133x35][_0x5b60[52]]>= 5){continue};_0x9133x34[_0x9133x35][_0x5b60[52]]++;leftDropNum--;leftDropSpan[_0x5b60[105]]= leftDropArr[leftDropNum];_0x9133x38[_0x5b60[68]][_0x5b60[93]]()}}}},timeChange:function(){var _0x9133x38=this;if(this[_0x5b60[98]]&& this[_0x5b60[109]]()&& !this[_0x5b60[99]]){info[_0x5b60[105]]= _0x5b60[113];this[_0x5b60[99]]= true;setTimeout(function(){_0x9133x38[_0x5b60[114]]();_0x9133x38[_0x5b60[99]]= false},1000)};if(leftDropNum== 0&& !this[_0x5b60[109]]()){info[_0x5b60[105]]= _0x5b60[115]};var _0x9133x38=this;setTimeout(function(){_0x9133x38[_0x5b60[68]][_0x5b60[116]]();_0x9133x38[_0x5b60[68]][_0x5b60[93]]();_0x9133x38[_0x5b60[106]]()},4)},isGameOver:function(){var _0x9133x3a=0;var _0x9133x34=this[_0x5b60[68]][_0x5b60[89]];for(var _0x9133x35=0;_0x9133x35< _0x9133x34[_0x5b60[92]];_0x9133x35++){if(_0x9133x34[_0x9133x35][_0x5b60[52]]== 6){_0x9133x3a++}};if(_0x9133x3a== _0x9133x34[_0x5b60[92]]){return true}else {return false}},nextLevel:function(){this[_0x5b60[46]]++;levelP[_0x5b60[105]]= _0x5b60[117]+ this[_0x5b60[46]];if(this[_0x5b60[46]]> +bestLevel[_0x5b60[105]]){this[_0x5b60[118]](this[_0x5b60[46]])};userBest();ctx[_0x5b60[91]](0,0,canvas[_0x5b60[29]],canvas[_0x5b60[30]]);this[_0x5b60[98]]= false;this[_0x5b60[68]]= null;var _0x9133x33=this[_0x5b60[96]];var _0x9133x37= new DropCollection();var _0x9133x3a=0;for(var i=0;i< _0x9133x33[_0x5b60[86]][_0x5b60[92]];i++){var _0x9133x32= new Drop();_0x9133x32[_0x5b60[52]]= getNumberInRange(1,4);_0x9133x3a+= _0x9133x32[_0x5b60[52]];_0x9133x32[_0x5b60[50]]= _0x9133x33[_0x5b60[86]][i][_0x5b60[50]];_0x9133x32[_0x5b60[51]]= _0x9133x33[_0x5b60[86]][i][_0x5b60[51]];_0x9133x37[_0x5b60[104]](_0x9133x32)};var _0x9133x3b;if(leftDropNum+ 7<= 20){_0x9133x3b= 7}else {_0x9133x3b= 20- leftDropNum};leftDropNum+= _0x9133x3b;leftDropSpan[_0x5b60[105]]= leftDropArr[leftDropNum];info[_0x5b60[105]]= _0x5b60[119]+ _0x9133x3b+ _0x5b60[120];this[_0x5b60[68]]= _0x9133x37},setBest:function(_0x9133x3c){var _0x9133x3d=userData[_0x5b60[102]]+ _0x5b60[121];var _0x9133x3e=_0x9133x3c+ _0x5b60[121];var _0x9133x3f=_0x9133x3e[_0x5b60[92]];for(var i=0;i< 6- _0x9133x3f;i++){_0x9133x3e= _0x5b60[122]+ _0x9133x3e};var _0x9133x40= new Date()+ _0x5b60[121];this[_0x5b60[101]]=  new Date()[_0x5b60[108]]();var _0x9133x41=this[_0x5b60[101]]- this[_0x5b60[100]];var _0x9133x42=Math[_0x5b60[97]](_0x9133x41/ (24* 3600* 1000));var _0x9133x43=_0x9133x41% (24* 3600* 1000);var _0x9133x44=Math[_0x5b60[97]](_0x9133x43/ (3600* 1000));var _0x9133x45=_0x9133x43% (3600* 1000);var _0x9133x46=Math[_0x5b60[97]](_0x9133x45/ (60* 1000));var _0x9133x47=_0x9133x45% (60* 1000);var _0x9133x48=Math[_0x5b60[123]](_0x9133x47/ 1000);user_ref[_0x5b60[22]](_0x9133x3d)[_0x5b60[133]]({name:_0x9133x3d,level:_0x9133x3c,UA:navigator[_0x5b60[124]],time:_0x9133x42+ _0x5b60[125]+ _0x9133x44+ _0x5b60[126]+ _0x9133x46+ _0x5b60[127]+ _0x9133x48+ _0x5b60[128],img:userImg[_0x5b60[129]],t:_0x9133x41,token:sjcl[_0x5b60[130]](_0x9133x41+ _0x5b60[121],_0x9133x3c+ _0x5b60[121]),rank:_0x9133x3e+ _0x5b60[131]+ (3000000000000- _0x9133x41),playTime:_0x9133x40+ _0x5b60[121],id:userData[_0x5b60[132]]});bestLevel[_0x5b60[105]]= _0x9133x3c}};restartBtn[_0x5b60[10]]= function(){for(var i=0;i< 99999;i++){clearTimeout(i)};game= null;leftDropNum= 10;game=  new Game();game[_0x5b60[103]]()};function getNumberInRange(_0x9133x4a,_0x9133x4b){var _0x9133x4c=_0x9133x4b- _0x9133x4a;var _0x9133x2b=Math[_0x5b60[134]]();return Math[_0x5b60[123]](_0x9133x2b* _0x9133x4c+ _0x9133x4a)}DUOSHUO[_0x5b60[147]][_0x5b60[146]](_0x5b60[135],function(){var _0x9133x4d=function(_0x9133x4e){if(_0x9133x4e[_0x5b60[136]]== 0){userData= _0x9133x4e[_0x5b60[137]];userImg[_0x5b60[129]]= userData[_0x5b60[138]];userNameP[_0x5b60[105]]= userData[_0x5b60[102]];game=  new Game();game[_0x5b60[103]]();userBest();getRank()}else {location[_0x5b60[139]]= _0x5b60[140]}};var _0x9133x4f=function(_0x9133x4e){location[_0x5b60[139]]= _0x5b60[140]};DUOSHUO[_0x5b60[145]][_0x5b60[144]](_0x5b60[141],_0x5b60[142],{"\x75\x73\x65\x72\x5F\x69\x64":this[_0x5b60[143]][_0x5b60[132]]},_0x9133x4d,_0x9133x4f)});function userBest(){user_ref[_0x5b60[157]](_0x5b60[148],function(_0x9133x51){var _0x9133x3d=userData[_0x5b60[102]]+ _0x5b60[121];var _0x9133x51=_0x9133x51[_0x5b60[149]]();var _0x9133x40= new Date()+ _0x5b60[121];if(_0x9133x51[_0x9133x3d]== undefined){bestLevel[_0x5b60[105]]= 1;user_ref[_0x5b60[22]](_0x9133x3d)[_0x5b60[133]]({name:_0x9133x3d,level:1,UA:navigator[_0x5b60[124]],time:0,t:0,img:userImg[_0x5b60[129]],token:sjcl[_0x5b60[130]](0+ _0x5b60[121],1+ _0x5b60[121]),rank:0,playTime:_0x9133x40+ _0x5b60[121],id:userData[_0x5b60[132]]})}else {try{if(sjcl[_0x5b60[152]](_0x9133x51[_0x9133x3d][_0x5b60[150]]+ _0x5b60[121],_0x9133x51[_0x9133x3d][_0x5b60[151]])== _0x9133x51[_0x9133x3d][_0x5b60[46]]+ _0x5b60[121]){bestLevel[_0x5b60[105]]= _0x9133x51[_0x9133x3d][_0x5b60[46]]}else {throw _0x5b60[153]}}catch(err){console[_0x5b60[154]](err);alert(_0x5b60[155]);user_ref[_0x5b60[22]](_0x9133x3d)[_0x5b60[133]]({name:_0x9133x3d,level:1,UA:navigator[_0x5b60[124]],time:0,t:0,img:userImg[_0x5b60[129]],token:sjcl[_0x5b60[130]](0+ _0x5b60[121],1+ _0x5b60[121]),rank:0,playTime:_0x9133x40+ _0x5b60[121],id:userData[_0x5b60[132]]});location[_0x5b60[156]]()}}})}function getRank(){user_ref[_0x5b60[169]](_0x5b60[168])[_0x5b60[167]](8)[_0x5b60[146]](_0x5b60[148],function(_0x9133x53){var _0x9133x54=[];var _0x9133x55=8;_0x9133x53[_0x5b60[160]](function(_0x9133x51){var _0x9133x56=_0x9133x51[_0x5b60[149]]();try{_0x9133x54[_0x5b60[159]]({img:_0x9133x56[_0x5b60[158]],name:_0x9133x56[_0x5b60[102]],level:_0x9133x56[_0x5b60[46]]})}catch(err){console[_0x5b60[154]](err)}});if(_0x9133x54[_0x5b60[92]]< 8){_0x9133x55= _0x9133x54[_0x5b60[92]]};var _0x9133x57=_0x5b60[121];for(var i=0;i< _0x9133x55;i++){_0x9133x57+= _0x5b60[161]+ (i+ 1)+ _0x5b60[162]+ _0x9133x54[i][_0x5b60[158]]+ _0x5b60[163]+ _0x9133x54[i][_0x5b60[102]]+ _0x5b60[164]+ _0x9133x54[i][_0x5b60[46]]+ _0x5b60[165]};levelRank[_0x5b60[105]]= _0x9133x57;loadBg[_0x5b60[13]][_0x5b60[104]](_0x5b60[166])})}
+//禁止touchmove
+document.body.addEventListener('touchmove', function(event) {
+	event.preventDefault();
+}, false);
+
+//fastclick
+if ('addEventListener' in document) {
+	document.addEventListener('DOMContentLoaded', function() {
+		FastClick.attach(document.body);
+	}, false);
+}
+
+var menuButton = document.getElementById("menuButton");
+var sideBar = document.getElementById("sideBar");
+var mask = document.getElementById("mask");
+menuButton.onclick = function() {
+	sideBar.classList.toggle("open");
+	mask.classList.toggle("show");
+}
+mask.onclick = function() {
+	sideBar.classList.remove("open");
+	mask.classList.remove("show");
+}
+
+
+var pastPlayTime;
+var todayPlayTime = new Date();
+
+
+
+var userData;
+var config = {
+	authDomain: "ten-drop.wilddog.com",
+	syncURL: "https://ten-drop.wilddogio.com"
+};
+var defApp = wilddog.initializeApp(config);
+var ref = wilddog.sync().ref();
+var user_ref = ref.child('user');
+
+var userImg = document.getElementById("userImg");
+var levelRank = document.getElementById("levelRank");
+var userNameP = document.getElementById("userName");
+
+//canvas
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext('2d');
+canvas.width = 600;
+canvas.height = 600;
+var w = canvas.width;
+var h = canvas.height;
+
+
+//剩下的水滴
+var leftDropNum = 10;
+var leftDropSpan = document.getElementById("leftDrop");
+var leftDropArr = ["NONE", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "TEN"];
+for (var i = 11; i < 100; i++) {
+	leftDropArr.push(i);
+}
+
+//获取页面各种元素
+var infoP = document.getElementById("info");
+var restartBtn = document.getElementById("restartBtn");
+var levelP = document.getElementById("level");
+var bestLevel = document.getElementById("bestLevel");
+var todayBest = document.getElementById("todayBest");
+var best = document.getElementById("best");
+var loadBg = document.getElementById("loadBg");
+
+//必要的游戏全局变量
+var game = null;
+
+
+/**
+ * 水滴对象
+ */
+var Drop = function() {
+	this.x = w / 2;
+	this.y = h / 2;
+	this.generation = 1;
+	this.direction = null;
+	//this.color = "#1BD369";
+	this.colorArr = ["#43A6FF", "#1BD369", "#FF7575"];
+}
+
+Drop.prototype = {
+	//集中的处理方法
+	process: function() {
+		this.chooseDraw();
+	},
+	//根据水滴的代来选择画的方法
+	chooseDraw: function() {
+		var colorIndex = (game.level - 1) % 3;
+		this.color = this.colorArr[colorIndex];
+		//console.log(colorIndex);
+		switch (this.generation) {
+			case 1:
+				this.draw_1();
+				break;
+			case 2:
+				this.draw_2();
+				break;
+			case 3:
+				this.draw_3();
+				break;
+			case 4:
+				this.draw_4();
+				break;
+			case 5:
+				this.draw_5();
+				break;
+			default:
+				break;
+		}
+	},
+	draw_1: function() {
+		EvenCompEllipse(ctx, this.x, this.y, 15, 20, this.color);
+	},
+	draw_2: function() {
+		EvenCompEllipse(ctx, this.x, this.y, 30, 30, this.color);
+	},
+	draw_3: function() {
+		EvenCompEllipse(ctx, this.x, this.y, 45, 35, this.color);
+	},
+	draw_4: function() {
+		EvenCompEllipse(ctx, this.x, this.y, 50, 50, this.color);
+
+	},
+	draw_5: function() {
+		var centerX = this.x;
+		var centerY = this.y;
+
+		if (this.direction == null) {
+			this.generation = 6;
+			EvenCompEllipse(ctx, this.x - 20, this.y, 10, 10, this.color);
+			EvenCompEllipse(ctx, this.x + 20, this.y, 10, 10, this.color);
+			EvenCompEllipse(ctx, this.x, this.y - 20, 10, 10, this.color);
+			EvenCompEllipse(ctx, this.x, this.y + 20, 10, 10, this.color);
+		} else {
+			EvenCompEllipse(ctx, this.x, this.y, 10, 10, this.color);
+			EvenCompEllipse(ctx, this.x, this.y, 10, 10, this.color);
+			EvenCompEllipse(ctx, this.x, this.y, 10, 10, this.color);
+			EvenCompEllipse(ctx, this.x, this.y, 10, 10, this.color);
+			return;
+		}
+
+		//左
+		var drop_left = new Drop();
+		drop_left.x = centerX - 20;
+		drop_left.y = centerY;
+		drop_left.generation = 5;
+		drop_left.direction = "left";
+		game.dropCollection.add_broken(drop_left);
+
+		//右
+		var drop_right = new Drop();
+		drop_right.x = centerX + 20;
+		drop_right.y = centerY;
+		drop_right.generation = 5;
+		drop_right.direction = "right";
+		game.dropCollection.add_broken(drop_right);
+
+		//上
+		var drop_up = new Drop();
+		drop_up.x = centerX;
+		drop_up.y = centerY + 20;
+		drop_up.generation = 5;
+		drop_up.direction = "up";
+		game.dropCollection.add_broken(drop_up);
+
+		//下
+		var drop_down = new Drop();
+		drop_down.x = centerX;
+		drop_down.y = centerY - 20;
+		drop_down.generation = 5;
+		drop_down.direction = "down";
+		game.dropCollection.add_broken(drop_down);
+	}
+}
+
+
+/**
+ * 绘制椭圆
+ */
+function EvenCompEllipse(context, x, y, a, b, fillStyle) {
+	context.save();
+	context.fillStyle = fillStyle;
+	//选择a、b中的较大者作为arc方法的半径参数
+	var r = (a > b) ? a : b;
+	var ratioX = a / r; //横轴缩放比率
+	var ratioY = b / r; //纵轴缩放比率
+	context.scale(ratioX, ratioY); //进行缩放（均匀压缩）
+	context.beginPath();
+	//从椭圆的左端点开始逆时针绘制
+	context.moveTo((x + a) / ratioX, y / ratioY);
+	context.arc(x / ratioX, y / ratioY, r, 0, 2 * Math.PI);
+	context.closePath();
+	context.fill();
+	context.restore();
+};
+
+
+/**
+ * 水滴上的盘子对象
+ */
+var Board = function() {
+	this.w = canvas.width;
+	this.h = canvas.height;
+	this.hor = 6; //水平方向格子数
+	this.ver = 6; //竖直方向格子数
+	this.boardArr = [];
+}
+
+Board.prototype = {
+	//初始化
+	init: function() {
+		for (var i = 0; i < this.hor; i++) {
+			for (var j = 0; j < this.ver; j++) {
+				var x = i * this.w / this.hor + this.w / this.hor / 2;
+				var y = j * this.h / this.ver + this.h / this.ver / 2;
+				var pos = {
+					x: x,
+					y: y
+				}
+				this.boardArr.push(pos);
+			}
+		}
+		//this.draw();
+	},
+	//绘制（后面未使用）
+	draw: function() {
+		for (var i = 0; i <= this.hor; i++) {
+			ctx.save();
+			ctx.beginPath();
+			ctx.moveTo(i * this.w / this.hor, 0);
+			ctx.lineTo(i * this.w / this.hor, this.h);
+			ctx.closePath();
+			ctx.stroke();
+			ctx.restore();
+		}
+		for (var i = 0; i <= this.ver; i++) {
+			ctx.save();
+			ctx.beginPath();
+			ctx.moveTo(0, i * this.h / this.ver);
+			ctx.lineTo(this.w, i * this.h / this.ver);
+			ctx.closePath();
+			ctx.stroke();
+			ctx.restore();
+		}
+	}
+}
+
+/**
+ * 水滴数组对象
+ */
+var DropCollection = function() {
+	this.dropArr = [];
+	this.brokenArr = [];
+}
+DropCollection.prototype = {
+	//集中的处理方法
+	process: function() {
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		for (var i = 0; i < this.dropArr.length; i++) {
+			if (this.dropArr[i].generation == 6) {
+				continue;
+			}
+			this.dropArr[i].process();
+		}
+		for (var i = 0; i < this.brokenArr.length; i++) {
+			if (this.brokenArr[i].generation == 6) {
+				continue;
+			}
+			this.brokenArr[i].process();
+		}
+	},
+	//水滴数组add
+	add: function(drop) {
+		this.dropArr.push(drop);
+	},
+	//水滴数组remove
+	remove: function(drop) {
+		for (var i = 0; i < this.dropArr.length; i++) {
+			if (this.dropArr[i] == drop) {
+				this.dropArr.splice(i, 1);
+			}
+		}
+	},
+	//散开水滴数组add
+	add_broken: function(drop) {
+		this.brokenArr.push(drop);
+	},
+	//散开水滴数组remove
+	remove_broken: function(drop) {
+		for (var i = 0; i < this.brokenArr.length; i++) {
+			if (this.brokenArr[i] == drop) {
+				this.brokenArr.splice(i, 1);
+			}
+		}
+	},
+	//散开的水滴飞行逻辑处理函数
+	fly: function(drop) {
+		for (var i = 0; i < this.brokenArr.length; i++) {
+			if (this.brokenArr[i].generation == 6) {
+				continue;
+			}
+			if (this.isInto(this.brokenArr[i].x, this.brokenArr[i].y) || this.brokenArr[i].x < -5 || this.brokenArr[i].x > canvas.width + 5 || this.brokenArr[i].y > canvas.height + 5 || this.brokenArr[i].y < -5) {
+				this.brokenArr[i].generation = 6;
+				continue;
+			}
+			switch (this.brokenArr[i].direction) {
+				case "left":
+					this.brokenArr[i].x--;
+					break;
+				case "right":
+					this.brokenArr[i].x++;
+					break;
+				case "up":
+					this.brokenArr[i].y++;
+					break;
+				case "down":
+					this.brokenArr[i].y--;
+					break;
+				default:
+					break;
+			}
+		}
+	},
+	//判断散开的水滴是否击中
+	isInto: function(x, y) {
+		var board = game.board;
+		var dropArr = game.dropCollection.dropArr;
+		var i = Math.floor(x / (board.w / board.hor));
+		var j = Math.floor(y / (board.h / board.ver));
+		for (var k = 0; k < dropArr.length; k++) {
+			if ((dropArr[k].x == (i * board.w / board.hor + board.w / board.hor / 2)) && (dropArr[k].y == (j * board.h / board.ver + board.h / board.ver / 2)) && (dropArr[k].generation <= 4)) {
+				dropArr[k].generation++;
+				if (dropArr[k].generation > 6) {
+					dropArr[k].generation = 6;
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
+/**
+ * 游戏对象
+ */
+var Game = function() {
+	this.board = null;
+	this.dropCollection = null;
+	this.gameStart = false;
+	this.level = 1;
+	this.pause = false;
+	this.startTime = 0;
+	this.endTime = 0;
+	this.name = null;
+}
+Game.prototype = {
+	//游戏初始化
+	init: function() {
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		var board = new Board();
+		board.init();
+		this.board = board;
+		var dropCollection = new DropCollection();
+		for (var i = 0; i < board.boardArr.length; i++) {
+			var drop = new Drop();
+			drop.generation = getNumberInRange(1, 4);
+			drop.x = board.boardArr[i].x;
+			drop.y = board.boardArr[i].y;
+			dropCollection.add(drop);
+		}
+		leftDropSpan.innerHTML = leftDropArr[10];
+		this.timeChange();
+		this.dropCollection = dropCollection;
+		this.clickSelect();
+		//this.setBest();
+
+		this.startTime = new Date().getTime();
+		/*this.name = userData.connected_services.qzone.name;
+		console.log(this.name);*/
+	},
+	//点击选中水滴增加代
+	clickSelect: function() {
+		var that = this;
+		var board = this.board;
+		canvas.onclick = function(e) {
+			e.preventDefault();
+			if (this.pause) {
+				return;
+			}
+			if (leftDropNum == 0 || that.isGameOver()) {
+				alert("Game over!");
+				return;
+			}
+			that.gameStart = true;
+			var i = Math.floor(e.offsetX / (board.w / board.hor));
+			var j = Math.floor(e.offsetY / (board.h / board.ver));
+			var dropArr = that.dropCollection.dropArr;
+			for (var k = 0; k < dropArr.length; k++) {
+				if ((dropArr[k].x == (i * board.w / board.hor + board.w / board.hor / 2)) && (dropArr[k].y == (j * board.h / board.ver + board.h / board.ver / 2))) {
+					if (dropArr[k].generation >= 5) {
+						continue;
+					}
+					dropArr[k].generation++;
+					leftDropNum--;
+					leftDropSpan.innerHTML = leftDropArr[leftDropNum];
+					that.dropCollection.process();
+				}
+			}
+
+		}
+	},
+	//时间渲染
+	timeChange: function() {
+		var that = this;
+		if (this.gameStart && this.isGameOver() && !this.pause) {
+			info.innerHTML = "You win! Try your best to go to next level!";
+			this.pause = true;
+			setTimeout(function() {
+				that.nextLevel();
+				that.pause = false;
+			}, 1000);
+		}
+		if (leftDropNum == 0 && !this.isGameOver()) {
+			info.innerHTML = "You lose!";
+		}
+		var that = this;
+		setTimeout(function() {
+			that.dropCollection.fly();
+			that.dropCollection.process();
+			that.timeChange();
+		}, 4);
+	},
+	//判断是否游戏结束
+	isGameOver: function() {
+		var count = 0;
+		var dropArr = this.dropCollection.dropArr;
+		for (var k = 0; k < dropArr.length; k++) {
+			if (dropArr[k].generation == 6) {
+				count++;
+			}
+		}
+		if (count == dropArr.length) {
+			return true;
+		} else {
+			return false;
+		}
+	},
+	//进入下一关
+	nextLevel: function() {
+		this.level++;
+		levelP.innerHTML = "Level " + this.level;
+		if (this.level > +bestLevel.innerHTML) {
+			this.setBest(this.level);
+		}
+		if (this.level > +todayBest.innerHTML) {
+			this.setBest(this.level, "today");
+		}
+		//userBest();
+
+
+
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		this.gameStart = false;
+		this.dropCollection = null;
+		var board = this.board;
+		var dropCollection = new DropCollection();
+		var count = 0;
+		for (var i = 0; i < board.boardArr.length; i++) {
+			var drop = new Drop();
+			//var change = Math.random();
+			drop.generation = getNumberInRange(1, 4);
+			count += drop.generation;
+
+			drop.x = board.boardArr[i].x;
+			drop.y = board.boardArr[i].y;
+			dropCollection.add(drop);
+		}
+		var giveDrop;
+		if (leftDropNum + 7 <= 20) {
+			giveDrop = 7;
+		} else {
+			giveDrop = 20 - leftDropNum;
+		}
+		leftDropNum += giveDrop;
+		leftDropSpan.innerHTML = leftDropArr[leftDropNum];
+		info.innerHTML = "Try your best! Give you another " + giveDrop + " drop!";
+		this.dropCollection = dropCollection;
+	},
+	setBest: function(level, flag) {
+		var userName = /*userData.connected_services.qzone.name;*/ userData.name + "";
+		var lev = level + "";
+		var length = lev.length;
+		for (var i = 0; i < 6 - length; i++) {
+			lev = "0" + lev;
+		}
+		var p = new Date() + "";
+		this.endTime = new Date().getTime();
+		var time = this.endTime - this.startTime;
+		//计算出相差天数
+		var days = Math.floor(time / (24 * 3600 * 1000))
+
+		//计算出小时数
+		var leave1 = time % (24 * 3600 * 1000) //计算天数后剩余的毫秒数
+		var hours = Math.floor(leave1 / (3600 * 1000))
+
+		//计算相差分钟数
+		var leave2 = leave1 % (3600 * 1000) //计算小时数后剩余的毫秒数
+		var minutes = Math.floor(leave2 / (60 * 1000))
+
+		//计算相差秒数
+		var leave3 = leave2 % (60 * 1000) //计算分钟数后剩余的毫秒数
+		var seconds = Math.round(leave3 / 1000)
+
+		if (flag == "today") {
+			user_ref.child(userName).child("today").update({
+				level: level,
+				UA: navigator.userAgent,
+				time: days + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒",
+				img: userImg.src,
+				t: time,
+				token: sjcl.encrypt(time + "", level + ""),
+				rank: lev + '_' + (3000000000000 - time),
+				playTime: p + "",
+			})
+			user_ref.child(userName).update({
+				todayRank: lev + '_' + (3000000000000 - time)
+			})
+			todayBest.innerHTML = level;
+			return;
+		}
+
+
+		user_ref.child(userName).update({
+			//name: userName,
+			level: level,
+			UA: navigator.userAgent,
+			time: days + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒",
+			t: time,
+			token: sjcl.encrypt(time + "", level + ""),
+			rank: lev + '_' + (3000000000000 - time),
+			playTime: p + "",
+			todayRank: lev + '_' + (3000000000000 - time)
+				//id: userData.user_id
+		})
+		bestLevel.innerHTML = level;
+	}
+}
+
+/**
+ * 重新开始游戏
+ */
+restartBtn.onclick = function() {
+	//location.reload();
+	for (var i = 0; i < 99999; i++) {
+		clearTimeout(i);
+	}
+	game = null;
+	leftDropNum = 10;
+	game = new Game();
+	game.init();
+}
+
+
+/**
+ * 返回返回内函数（辅助函数）
+ */
+function getNumberInRange(min, max) {
+	var range = max - min;
+	var r = Math.random();
+	return Math.round(r * range + min)
+}
+
+/*
+DUOSHUO.visitor.on('reset', function() {
+	//console.log(this.data.user_id);
+	var successCallback = function(data) {
+		if (data.code == 0) {
+			//console.log(data);
+			userData = data.response;
+			userImg.src = userData.avatar_url;
+			userNameP.innerHTML = userData.name;
+			//创建游戏实例，并且初始化
+			game = new Game();
+			game.init();
+			userBest();
+			getRank();
+			getTodayRank();
+		} else {
+			location.href = "https://bupt-hjm.github.io/ten-drop/"
+		}
+	};
+	var errorCallback = function(data) {
+		location.href = "https://bupt-hjm.github.io/ten-drop/"
+	};
+	DUOSHUO.API.ajax('GET', 'users/profile', {
+		"user_id": this.data.user_id
+	}, successCallback, errorCallback);
+});*/
+
+userData = {
+	name: "HJM",
+	avatar_url: "http://tva1.sinaimg.cn/crop.0.5.750.750.50/005B3SLjjw8f855wmu71sj30ku0l5t9m.jpg",
+	user_id: 2222
+}
+userImg.src = userData.avatar_url;
+userNameP.innerHTML = userData.name;
+//创建游戏实例，并且初始化
+game = new Game();
+game.init();
+userBest();
+getRank();
+getTodayRank();
+
+function userBest() {
+	user_ref.once("value", function(user) {
+		var userName = userData.name + "";
+		var user = user.val();
+		var p = new Date() + "";
+		if (user[userName] == undefined) {
+			bestLevel.innerHTML = 1;
+			todayBest.innerHTML = 1;
+			user_ref.child(userName).set({
+				name: userName,
+				level: 1,
+				UA: navigator.userAgent,
+				time: 0,
+				t: 0,
+				img: userImg.src,
+				token: sjcl.encrypt(0 + "", 1 + ""),
+				rank: 000000,
+				playTime: p + "",
+				id: userData.user_id,
+				today: 1,
+				todayRank: 000000
+			});
+		} else {
+			bestLevel.innerHTML = user[userName].level;
+			if (user_ref.child(userName).today == 1) {
+				user_ref.child(userName).child("today").set({
+					level: 1,
+					UA: navigator.userAgent,
+					time: 0,
+					t: 0,
+					token: sjcl.encrypt(0 + "", 1 + ""),
+					rank: 000000,
+					playTime: p + "",
+				})
+			} else {
+				if ((user[userName].today == undefined) && (new Date(user[userName].playTime).toDateString() == new Date(todayPlayTime).toDateString())) {
+					user_ref.child(userName).update({
+						todayRank: user[userName].rank
+					})
+					user_ref.child(userName).child("today").set({
+						level: user[userName].level,
+						UA: user[userName].UA,
+						time: user[userName].time,
+						t: user[userName].t,
+						token: user[userName].token,
+						rank: user[userName].rank,
+						playTime: user[userName].playTime
+					})
+					todayBest.innerHTML = user[userName].today.level;
+					return;
+				}
+				if (user[userName].today == undefined) {
+					user_ref.child(userName).set({
+						level: user[userName].level,
+						UA: user[userName].UA,
+						time: user[userName].time,
+						t: user[userName].t,
+						token: user[userName].token,
+						rank: user[userName].rank,
+						playTime: user[userName].playTime,
+						todayRank: 1
+					})
+					user_ref.child(userName).child("today").set({
+						level: 1,
+						UA: navigator.userAgent,
+						time: 0,
+						t: 0,
+						token: sjcl.encrypt(0 + "", 1 + ""),
+						rank: 000000,
+						playTime: p + "",
+					});
+
+					return;
+				}
+				pastPlayTime = user[userName].today.playTime;
+				if (new Date(pastPlayTime).toDateString() !== new Date(todayPlayTime).toDateString()) {
+					user_ref.child(userName).child("today").update({
+						level: 1,
+						UA: navigator.userAgent,
+						time: 0,
+						t: 0,
+						token: sjcl.encrypt(0 + "", 1 + ""),
+						rank: 000000,
+						playTime: p + ""
+					})
+
+				}
+
+			}
+			todayBest.innerHTML = user[userName].today.level;
+		}
+	})
+}
+var todayRankHtml = "";
+var pastRankHtml = "";
+
+function getRank() {
+	user_ref.orderByChild('rank').limitToLast(8).on("value", function(users) {
+		var userArr = [];
+		var len = 8;
+		users.forEach(function(user) {
+			var item = user.val();
+			try {
+				userArr.unshift({
+					img: item.img,
+					name: item.name,
+					level: item.level
+				});
+			} catch (err) {
+				console.log(err);
+			}
+		});
+		if (userArr.length < 8) {
+			len = userArr.length;
+		}
+		pastRankHtml = "";
+		for (var i = 0; i < len; i++) {
+			pastRankHtml += "<p><span class='user-rank'>" + (i + 1) + "</span><img src=" + userArr[i].img + "><span class='user-rank-name'>" + userArr[i].name + "</span><span class='user-level'>level " + userArr[i].level + "</span></p>";
+		}
+	});
+}
+
+
+function getTodayRank() {
+	user_ref.orderByChild('todayRank').limitToLast(100).on("value", function(users) {
+		todayPlayTime = new Date() + "";
+		var userArr = [];
+		var len = 8;
+		var k = 0;
+		users.forEach(function(user) {
+			var item = user.val();
+			try {
+				if (item.playTime !== undefined) {
+					if (new Date(item.playTime).toDateString() == new Date(todayPlayTime).toDateString()) {
+						userArr.unshift({
+							img: item.img,
+							name: item.name,
+							level: item.level
+						});
+						k++;
+					}
+					if (k == 8) {
+						return;
+					}
+				}
+			} catch (err) {
+				console.log(err);
+			}
+		});
+		if (userArr.length < 8) {
+			len = userArr.length;
+		}
+		todayRankHtml = "";
+		for (var i = 0; i < len; i++) {
+			todayRankHtml += "<p><span class='user-rank'>" + (i + 1) + "</span><img src=" + userArr[i].img + "><span class='user-rank-name'>" + userArr[i].name + "</span><span class='user-level'>level " + userArr[i].level + "</span></p>";
+		}
+		levelRank.innerHTML = todayRankHtml;
+		loadBg.classList.add("hide");
+	});
+}
+
+var switchButton = document.getElementById("switch");
+var rankTitle = document.getElementById("rankTitle");
+switchButton.onclick = function() {
+	if (rankTitle.innerHTML == "今日实时排行榜") {
+		levelRank.innerHTML = pastRankHtml;
+		rankTitle.innerHTML = "历史排行榜";
+		switchButton.innerHTML = "今日";
+	} else {
+		levelRank.innerHTML = todayRankHtml;
+		rankTitle.innerHTML = "今日实时排行榜";
+		switchButton.innerHTML = "历史";
+	}
+}
+
+
+
+
+
+
+function a() {
+	user_ref.orderByChild('rank').limitToLast(100).on("value", function(users) {
+		todayPlayTime = new Date() + "";
+		var userArr = [];
+		users.forEach(function(user) {
+			var item = user.val();
+			/*if((item.today !== undefined)) {
+				console.log(item);
+			}*/
+
+
+
+
+			if ((item.today == undefined) && (new Date(item.playTime).toDateString() == new Date(todayPlayTime).toDateString())) {
+					console.log(item);
+					/*user_ref.child(item.name).update({
+						todayRank: item.rank
+					})
+					user_ref.child(item.name).child("today").set({
+						level: item.level,
+						UA: item.UA,
+						time: item.time,
+						t: item.t,
+						token: item.token,
+						rank: item.rank,
+						playTime: item.playTime
+					})*/
+					//todayBest.innerHTML = user[userName].today.level;
+			}
+		});
+	});
+}
