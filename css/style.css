@@ -276,6 +276,10 @@ side-bar
 	z-index: 999;
 }
 
+.load-bg-change {
+	background-color: rgba(0,0,0,0);
+}
+
 .hide {
 	z-index: -999;
 	opacity: 0;
