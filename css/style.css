@@ -295,6 +295,10 @@ side-bar
 	margin-top: -32px;
 }
 
+#loadBg .load-item-change {
+	color:#0886f7;
+}
+
 #loadBg p {
 	position: absolute;
     top: 30%;
@@ -305,6 +309,11 @@ side-bar
     text-align: center;
     color: #fff;
     margin-top: 56px;
+}
+
+#loadBg .load-p-change {
+	color: #0886f7;
+	font-size:25px;
 }
 
 .log-out-button {
