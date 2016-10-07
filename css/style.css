@@ -347,7 +347,7 @@ side-bar
 
 }
 
-@media (max-height: 800px) {
+@media screen and (max-height: 800px) {
     .scale {
 	    -webkit-transform: scale(0.8);
 	    transform: scale(0.8);

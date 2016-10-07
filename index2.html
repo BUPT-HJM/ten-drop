@@ -8,50 +8,55 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="load-bg" id="loadBg">
-		<div class="la-ball-spin-fade la-3x" id="load-item">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+	<div class="scale">
+		<div class="load-bg" id="loadBg">
+			<div class="la-ball-spin-fade la-3x" id="load-item">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<p id="loading">正在努力加载中...</p>
 		</div>
-		<p id="loading">正在努力加载中...</p>
-	</div>
-	<div id="nav">
-		<img src="img/menu.png" alt="" class="menu-button" id="menuButton">
-		<p class="logo">TEN DROP</p>
-	</div>
-	<div class="side-bar" id="sideBar">
-		<img src="" alt="" id="userImg" class="user-img">
-		<p id="userName" class="user-name"></p>
-		<a href="https://ten-drop.duoshuo.com/logout/" class="log-out-button">登出</a>
-		<h1 id="rankTitle">今日实时排行榜</h1>
-		<p id="switch">历史</p>
-		<div id="levelRank"></div>
-	</div>
-	<div class="wrap">
+		<div id="nav">
+			<img src="img/menu.png" alt="" class="menu-button" id="menuButton">
+			<p class="logo">TEN DROP</p>
+		</div>
+		<div class="side-bar" id="sideBar">
+			<img src="" alt="" id="userImg" class="user-img">
+			<p id="userName" class="user-name"></p>
+			<a href="https://ten-drop.duoshuo.com/logout/" class="log-out-button">登出</a>
+			<h1 id="rankTitle">今日实时排行榜</h1>
+			<p id="switch">历史</p>
+			<div id="levelRank"></div>
+		</div>
+		<div class="wrap">
 
-		<h1 class="title">
-			<span id="leftDrop">TEN</span>
-			DROP
-		</h1>
-		<p id="info">
-			You can use ten drop.
-		</p>
-		<p id="level">Level 1</p>
-		<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span><br>
-		<strong>TODAY:</strong> Level <span id="todayBest"></span>
-		</p>
-		<canvas id="canvas"></canvas>
-		<p id="restartBtn">RESTART</p>
-		<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
+			<h1 class="title">
+				<span id="leftDrop">TEN</span>
+				DROP
+			</h1>
+			<p id="info">
+				You can use ten drop.
+			</p>
+			<p id="level">Level 1</p>
+			<p id="best"><strong>BEST:</strong> Level <span id="bestLevel"></span><br>
+			<strong>TODAY:</strong> Level <span id="todayBest"></span>
+			</p>
+			<canvas id="canvas"></canvas>
+			<p id="restartBtn">RESTART</p>
+			<p class="copyright">Copyright © 2016 <a href="https://github.com/BUPT-HJM/ten-drop">BUPT-HJM</a></p>
 
+		</div>
+		<div id="mask" class="mask"></div>
 	</div>
-	<div id="mask" class="mask"></div>
+
+
+
 	<script>
 	var duoshuoQuery = {
 		short_name: "ten-drop"
