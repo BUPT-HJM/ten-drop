@@ -82,7 +82,7 @@ body,html {
 	position: absolute;
 	top: 200px;
 	left: 50%;
-	top: 26%;
+	//top: 26%;
 	margin-left: -250px;
 	color: #021531;
 }
@@ -112,6 +112,7 @@ body,html {
 	font-size: 30px;
 }
 .login {
+	position: relative;
 	margin-top: 20px;
 	padding-left: 40px;
 	font-size: 30px;
@@ -180,5 +181,21 @@ body,html {
     margin-top: 10px;
 
 }*/
+
+
+.login-tourist {
+    position: absolute;
+    top: 46px;
+    right: 49px;
+    display: block;
+    width: 199px;
+    height: 36.1px;
+    line-height: 36.1px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #9C27B0;
+    font-size: 15px;
+}
 
 
